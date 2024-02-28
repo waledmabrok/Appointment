@@ -16,6 +16,8 @@ class AppointmentScreen extends StatefulWidget {
   _AppointmentScreenState createState() => _AppointmentScreenState();
 }
 
+
+
 class _AppointmentScreenState extends State<AppointmentScreen> {
   int _selectedIndex = 0;
 
@@ -24,16 +26,6 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
       _selectedIndex = index;
     });
   }
-
-
-
-
-
-
-
-
-
-
 
 
   @override
@@ -192,22 +184,20 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
     ]),
     )
 
-          else if (_selectedIndex == 2)
+    else if (_selectedIndex == 2)
     SizedBox(width: size.width*360/430,
     child: ListView(
     shrinkWrap: true,
     physics: NeverScrollableScrollPhysics(),
     children: [
-      cardComplete(name: "Dr.yassmin", rating: 3.4, specialty: "Pediatricain", onChatPressed: (){}, onVideoCallPressed:(){}),
-      SizedBox(height: size.height*19/932,),
-      cardComplete(name: "Dr.Sara", rating: 3.2, specialty: "Pediatricain", onChatPressed: (){}, onVideoCallPressed:(){}),
-      SizedBox(height: size.height*19/932,),
-      cardComplete(name: "Dr.nada", rating: 3.8, specialty: "Pediatricain", onChatPressed: (){}, onVideoCallPressed:(){}),
-      SizedBox(height: size.height*19/932,),
-      cardComplete(
-        name: "Dr. Ahmed", rating: 3.8, specialty: "Dermatologist", onChatPressed: () {}, onVideoCallPressed: () {},
-      ),
-      SizedBox(height: size.height * 19 / 932),
+    cardComplete(name: "Dr.yassmin", rating: 3.4, specialty: "Pediatricain", onChatPressed: (){}, onVideoCallPressed:(){}),
+    SizedBox(height: size.height*19/932,),
+    cardComplete(name: "Dr.Sara", rating: 3.2, specialty: "Pediatricain", onChatPressed: (){}, onVideoCallPressed:(){}),
+    SizedBox(height: size.height*19/932,),
+    cardComplete(name: "Dr.nada", rating: 3.8, specialty: "Pediatricain", onChatPressed: (){}, onVideoCallPressed:(){}),
+    SizedBox(height: size.height*19/932,),
+    cardComplete(name: "Dr. Ahmed", rating: 3.8, specialty: "Dermatologist", onChatPressed: () {}, onVideoCallPressed: () {},),
+    SizedBox(height: size.height * 19 / 932),
     cardComplete(name: "Dr.Sara", rating: 2.5, specialty: "Pediatricain", onChatPressed: (){}, onVideoCallPressed:(){}),
     SizedBox(height: size.height*19/932,),
     cardComplete(name: "Dr.nermin", rating: 4.5, specialty: "Pediatricain", onChatPressed: (){}, onVideoCallPressed:(){}),
@@ -220,26 +210,14 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
 
 
     ]
-          ),
-        )
+    ),
 
 
 
-    ])));
+
+    )])));
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -283,7 +261,6 @@ class _TapBarState extends State<TapBar2> {
 }
 
 */
-
 
 
 class DoctorCard extends StatelessWidget {
@@ -440,6 +417,7 @@ class cardComplete extends StatefulWidget {
   @override
   State<cardComplete> createState() => _cardCompleteState();
 }
+
 
 class _cardCompleteState extends State<cardComplete> {
   @override
